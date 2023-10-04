@@ -63,7 +63,7 @@ public class Pinturas extends ObraArtistica{
 
     @Override
     public String toString() {
-        return "Pinturas{" + "dimensiones=" + dimensiones + ", soporte=" + soporte + '}';
+        return super.toString() + "Pinturas{" + "dimensiones=" + dimensiones + ", soporte=" + soporte + '}';
     }
     
     

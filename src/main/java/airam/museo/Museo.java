@@ -5,6 +5,7 @@
 package airam.museo;
 
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  *
@@ -14,7 +15,7 @@ public class Museo {
     
     public Catalogo catalogo = new Catalogo();
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         
         Artista artista1 = new Artista("Airam", "Jerez", LocalDate.MIN, LocalDate.MAX);
         Artista artista2 = new Artista("Alvaro", "Jerez", LocalDate.MIN, LocalDate.MAX);
@@ -28,7 +29,7 @@ public class Museo {
         Esculturas escultura2 = new Esculturas("Marmol", 3.18, "Boleador", 5, artista1, LocalDate.MIN);
         Esculturas escultura3 = new Esculturas("Caliza", 4.18, "Cansado", 6, artista1, LocalDate.MIN);
         
-        
+        añadeObra(pintura3);
     }
     
     
@@ -36,17 +37,21 @@ public class Museo {
     public void añadeObra(ObraArtistica ob) {
         
         catalogo.setObra(ob);
+        System.out.println(catalogo);
         
     }
     
-    public void eliminarObra(ObraArtistica nI) {
-        for(int i = 0; i <= catalogo.getObra().size(); i++ ) {
-            catalogo.getObra().removeIf(nI);
+    public void eliminarObra(int nI) {
+        List cat = catalogo.getObra();
+        for(int i = 0; i <= cat.size(); i++) {
+            for(int j = 0; j <= cat(i);j++) {
+                
+            }
         }
         
     }
     
-    public void buscarObra(ObraArtistica nI) {
+    public void buscarObra(int nI) {
         
     }
 }
