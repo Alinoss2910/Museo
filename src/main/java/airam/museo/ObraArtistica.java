@@ -92,7 +92,10 @@ public class ObraArtistica {
 
     @Override
     public String toString() {
-        return "ObraArtistica{" + "titulo=" + titulo + ", nInventario=" + nInventario + ", autor=" + autor + ", fechaCreacion=" + fechaCreacion + '}';
+        return " Titulo: " + titulo + "\n" +
+                "Número de Inventario: " + nInventario + "\n" +
+                "Artista: " + autor + "\n" + 
+                "Fecha de Creación: " + fechaCreacion;
     }
     
     

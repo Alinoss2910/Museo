@@ -63,7 +63,7 @@ public class Esculturas extends ObraArtistica{
 
     @Override
     public String toString() {
-        return "Esculturas{" + "material=" + material + ", altura=" + altura + '}';
+        return "Escultura \n" + "Material: " + material + " Altura" + altura + super.toString();
     }
     
     

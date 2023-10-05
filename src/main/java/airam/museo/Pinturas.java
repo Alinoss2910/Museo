@@ -12,20 +12,20 @@ import java.util.Objects;
  * @author dam
  */
 public class Pinturas extends ObraArtistica{
-    private String dimensiones;
+    private int dimensiones;
     private String soporte;
 
-    public Pinturas(String dimensiones, String soporte, String titulo, int nInventario, Artista autor, LocalDate fechaCreacion) {
+    public Pinturas(int dimensiones, String soporte, String titulo, int nInventario, Artista autor, LocalDate fechaCreacion) {
         super(titulo, nInventario, autor, fechaCreacion);
         this.dimensiones = dimensiones;
         this.soporte = soporte;
     }
 
-    public String getDimensiones() {
+    public int getDimensiones() {
         return dimensiones;
     }
 
-    public void setDimensiones(String dimensiones) {
+    public void setDimensiones(int dimensiones) {
         this.dimensiones = dimensiones;
     }
 
@@ -63,7 +63,7 @@ public class Pinturas extends ObraArtistica{
 
     @Override
     public String toString() {
-        return super.toString() + "Pinturas{" + "dimensiones=" + dimensiones + ", soporte=" + soporte + '}';
+        return "Pintura \n" + "Dimensiones: " + dimensiones + " Soporte: " + soporte + super.toString();
     }
     
     

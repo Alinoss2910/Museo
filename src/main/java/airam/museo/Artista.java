@@ -88,7 +88,7 @@ public class Artista {
 
     @Override
     public String toString() {
-        return "Artista{" + "nombre=" + nombre + ", lugarNacimiento=" + lugarNacimiento + ", fechaNac=" + fechaNac + ", fechaMuerte=" + fechaMuerte + '}';
+        return nombre + " Nacido en: " + lugarNacimiento;
     }
     
     
